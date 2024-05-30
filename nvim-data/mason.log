@@ -1,0 +1,224 @@
+[INFO  8/5/2023 11:02:56 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=stylua) {}
+[INFO  8/5/2023 11:02:56 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shellcheck) {}
+[INFO  8/5/2023 11:02:56 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shfmt) {}
+[INFO  8/5/2023 11:02:56 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=flake8) {}
+[INFO  8/5/2023 11:02:57 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=stylua)
+[INFO  8/5/2023 11:02:57 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shfmt)
+[INFO  8/5/2023 11:02:57 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shellcheck)
+[INFO  8/5/2023 11:03:06 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=omnisharp) {}
+[INFO  8/5/2023 11:03:06 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=flake8)
+[INFO  8/5/2023 11:03:12 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=omnisharp)
+[INFO  8/5/2023 11:03:21 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  8/5/2023 11:03:21 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  8/5/2023 11:03:21 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=lua-language-server) {}
+[INFO  8/5/2023 11:03:21 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[ERROR 8/5/2023 11:03:21 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/5/2023 11:03:21 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/5/2023 11:03:21 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  8/5/2023 11:03:24 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=lua-language-server)
+[INFO  8/7/2023 8:04:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  8/7/2023 8:04:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  8/7/2023 8:04:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 8/7/2023 8:04:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/7/2023 8:04:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/7/2023 8:04:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  8/7/2023 8:07:53 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  8/7/2023 8:07:53 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  8/7/2023 8:07:53 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 8/7/2023 8:07:53 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/7/2023 8:07:53 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/7/2023 8:07:53 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  8/23/2023 7:30:07 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  8/23/2023 7:30:07 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  8/23/2023 7:30:07 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 8/23/2023 7:30:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 7:30:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 7:30:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  8/23/2023 8:08:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  8/23/2023 8:08:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  8/23/2023 8:08:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 8/23/2023 8:08:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 8:08:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 8:08:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  8/23/2023 8:13:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  8/23/2023 8:13:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  8/23/2023 8:13:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[ERROR 8/23/2023 8:13:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 8:13:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 8:13:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  8/23/2023 8:18:01 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  8/23/2023 8:18:01 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  8/23/2023 8:18:01 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 8/23/2023 8:18:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 8:18:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 8:18:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  8/23/2023 8:26:57 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  8/23/2023 8:26:57 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  8/23/2023 8:26:57 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[ERROR 8/23/2023 8:26:58 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 8:26:58 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 8:26:58 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  8/23/2023 9:01:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  8/23/2023 9:01:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  8/23/2023 9:01:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 8/23/2023 9:01:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 9:01:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 8/23/2023 9:01:08 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  10/21/2023 4:18:44 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  10/21/2023 4:18:44 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  10/21/2023 4:18:44 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 10/21/2023 4:18:45 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 10/21/2023 4:18:45 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 10/21/2023 4:18:47 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  10/21/2023 4:20:41 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  10/21/2023 4:20:41 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  10/21/2023 4:20:41 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[ERROR 10/21/2023 4:20:42 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 10/21/2023 4:20:42 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 10/21/2023 4:20:42 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  11/6/2023 11:15:28 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  11/6/2023 11:15:28 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  11/6/2023 11:15:28 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[ERROR 11/6/2023 11:15:28 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 11/6/2023 11:15:28 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 11/6/2023 11:15:28 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  11/6/2023 12:29:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  11/6/2023 12:29:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  11/6/2023 12:29:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 11/6/2023 12:29:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 11/6/2023 12:29:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 11/6/2023 12:29:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  11/6/2023 12:30:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  11/6/2023 12:30:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  11/6/2023 12:30:25 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 11/6/2023 12:30:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 11/6/2023 12:30:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 11/6/2023 12:30:26 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  12/13/2023 12:01:00 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  12/13/2023 12:01:00 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  12/13/2023 12:01:00 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 12/13/2023 12:01:00 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 12/13/2023 12:01:00 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 12/13/2023 12:01:00 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/8/2024 7:22:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/8/2024 7:22:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  2/8/2024 7:22:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[ERROR 2/8/2024 7:22:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/8/2024 7:22:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/8/2024 7:22:02 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/12/2024 5:19:04 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  2/12/2024 5:19:04 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/12/2024 5:19:04 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 2/12/2024 5:19:05 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/12/2024 5:19:05 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/12/2024 5:19:05 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/12/2024 6:13:47 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  2/12/2024 6:13:47 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/12/2024 6:13:47 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 2/12/2024 6:13:47 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/12/2024 6:13:47 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/12/2024 6:13:47 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/13/2024 4:57:37 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/13/2024 4:57:37 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/13/2024 4:57:37 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 2/13/2024 4:57:38 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/13/2024 4:57:38 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/13/2024 4:57:38 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/13/2024 5:02:40 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/13/2024 5:02:40 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/13/2024 5:02:40 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 2/13/2024 5:02:40 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/13/2024 5:02:40 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/13/2024 5:02:40 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/13/2024 5:04:12 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/13/2024 5:04:12 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/13/2024 5:04:12 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 2/13/2024 5:04:13 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/13/2024 5:04:13 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/13/2024 5:04:13 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/13/2024 5:05:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/13/2024 5:05:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/13/2024 5:05:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 2/13/2024 5:05:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/13/2024 5:05:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/13/2024 5:05:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/19/2024 5:14:10 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/19/2024 5:14:10 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/19/2024 5:14:10 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 2/19/2024 5:14:10 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/19/2024 5:14:10 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/19/2024 5:14:10 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/19/2024 5:29:41 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/19/2024 5:29:41 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/19/2024 5:29:41 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 2/19/2024 5:29:41 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/19/2024 5:29:41 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/19/2024 5:29:41 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/19/2024 5:30:03 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  2/19/2024 5:30:03 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/19/2024 5:30:03 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[ERROR 2/19/2024 5:30:03 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/19/2024 5:30:03 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/19/2024 5:30:03 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  2/19/2024 5:51:05 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  2/19/2024 5:51:05 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  2/19/2024 5:51:05 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR 2/19/2024 5:51:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/19/2024 5:51:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 2/19/2024 5:51:06 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  3/3/2024 11:47:57 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  3/3/2024 11:47:57 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  3/3/2024 11:47:57 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR 3/3/2024 11:48:01 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=typescript-language-server) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 3/3/2024 11:48:01 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[ERROR 3/3/2024 11:48:01 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm.cmd failed with exit code - and signal -. npm.cmd is not executable
+[INFO  3/4/2024 9:07:59 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  3/4/2024 9:07:59 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  3/4/2024 9:07:59 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=typescript-language-server) {}
+[INFO  3/4/2024 9:08:16 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=typescript-language-server)
+[INFO  3/4/2024 9:08:20 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=pyright)
+[INFO  3/4/2024 9:08:20 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=json-lsp)
+[INFO  3/11/2024 10:26:59 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=yaml-language-server) {}
+[INFO  3/11/2024 10:27:07 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=flake8) Package(name=flake8)
+[INFO  3/11/2024 10:27:07 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shellcheck) Package(name=shellcheck)
+[INFO  3/11/2024 10:27:07 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shfmt) Package(name=shfmt)
+[INFO  3/11/2024 10:27:09 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=stylua) Package(name=stylua)
+[INFO  3/11/2024 10:27:09 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=yaml-language-server)
+[INFO  3/11/2024 10:27:09 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=lua-language-server) Package(name=lua-language-server)
+[INFO  3/11/2024 10:27:09 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shellcheck)
+[INFO  3/11/2024 10:27:10 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=omnisharp) Package(name=omnisharp)
+[INFO  3/11/2024 10:27:10 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shfmt)
+[INFO  3/11/2024 10:27:11 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) Package(name=pyright)
+[INFO  3/11/2024 10:27:11 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=stylua)
+[INFO  3/11/2024 10:27:16 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=lua-language-server)
+[INFO  3/11/2024 10:27:16 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=omnisharp)
+[INFO  3/11/2024 10:27:20 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=flake8)
+[INFO  3/11/2024 10:27:31 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=pyright)
+[INFO  3/12/2024 10:45:22 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gleam) {}
+[INFO  3/12/2024 10:45:24 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=gleam)
+[INFO  3/27/2024 9:52:22 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gleam) {}
+[INFO  3/27/2024 9:52:27 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=gleam)
+[INFO  3/27/2024 9:52:37 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) Package(name=pyright)
+[INFO  3/27/2024 9:52:47 PM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=pyright)
+[INFO  4/25/2024 10:20:18 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=snyk) {}
+[INFO  4/25/2024 10:20:21 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=snyk)
+[INFO  4/25/2024 10:20:36 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=terraform-ls) {}
+[ERROR 4/25/2024 10:20:37 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=terraform-ls) error='spawn: powershell failed with exit code 1 and signal 0. iwr : The underlying connection was closed: An unexpected error occurred on a send.\r\nAt line:1 char:160\r\n+ ... pe]::Tls12; iwr -Headers @{"User-Agent"="mason.nvim v1.10.0 (+https:/ ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], WebExc \r\n   eption\r\n    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand\r\n \r\n\nFailed to download file "https://releases.hashicorp.com/terraform-ls/0.33.1/terraform-ls_0.33.1_windows_amd64.zip".'
+[INFO  4/25/2024 10:22:04 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=tflint) {}
+[INFO  4/25/2024 10:22:06 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=tfsec) {}
+[INFO  4/25/2024 10:22:08 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=tfsec)
+[INFO  4/25/2024 10:22:09 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=tflint)
+[INFO  5/26/2024 10:50:28 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=intelephense) {}
+[INFO  5/26/2024 10:50:42 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=intelephense)
+[INFO  5/26/2024 10:50:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=snyk) Package(name=snyk)
+[INFO  5/26/2024 10:50:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=tflint) Package(name=tflint)
+[INFO  5/26/2024 10:50:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=tfsec) Package(name=tfsec)
+[INFO  5/26/2024 10:50:47 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) Package(name=json-lsp)
+[INFO  5/26/2024 10:50:49 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=lua-language-server) Package(name=lua-language-server)
+[INFO  5/26/2024 10:50:49 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=snyk)
+[INFO  5/26/2024 10:50:49 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) Package(name=pyright)
+[INFO  5/26/2024 10:50:49 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=tfsec)
+[INFO  5/26/2024 10:50:53 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=tflint)
+[INFO  5/26/2024 10:50:53 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=lua-language-server)
+[INFO  5/26/2024 10:50:54 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=json-lsp)
+[INFO  5/26/2024 10:50:57 AM] ...m-data/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=pyright)

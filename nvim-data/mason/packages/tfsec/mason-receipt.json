@@ -1,0 +1,1 @@
+{"secondary_sources":[],"schema_version":"1.1","links":{"opt":{},"share":{},"bin":{"tfsec.cmd":"tfsec-windows-amd64.exe"}},"metrics":{"start_time":1716735047080,"completion_time":1716735049782},"name":"tfsec","primary_source":{"id":"pkg:github\/aquasecurity\/tfsec@v1.28.6","type":"registry+v1"}}

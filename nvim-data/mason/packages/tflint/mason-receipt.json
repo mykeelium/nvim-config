@@ -1,0 +1,1 @@
+{"secondary_sources":[],"schema_version":"1.1","links":{"opt":{},"share":{},"bin":{"tflint.cmd":"tflint.exe"}},"metrics":{"start_time":1716735047086,"completion_time":1716735053139},"name":"tflint","primary_source":{"id":"pkg:github\/terraform-linters\/tflint@v0.51.1","type":"registry+v1"}}

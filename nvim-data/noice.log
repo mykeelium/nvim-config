@@ -1,0 +1,44 @@
+
+
+3/10/2024 12:49:15 PM
+...a/Local/nvim-data/lazy/nui.nvim/lua/nui/popup/border.lua:507: attempt to call field 'set_win_option' (a nil value)
+
+stack traceback:
+	[C]: in function 'pcall'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/call.lua:144: in function 'set_win_option'
+	...a/Local/nvim-data/lazy/nui.nvim/lua/nui/popup/border.lua:507: in function '_open_window'
+	...a/Local/nvim-data/lazy/nui.nvim/lua/nui/popup/border.lua:558: in function 'mount'
+	...ata/Local/nvim-data/lazy/nui.nvim/lua/nui/popup/init.lua:244: in function 'mount'
+	...a/Local/nvim-data/lazy/noice.nvim/lua/noice/view/nui.lua:141: in function 'mount'
+	...a/Local/nvim-data/lazy/noice.nvim/lua/noice/view/nui.lua:130: in function 'create'
+	...a/Local/nvim-data/lazy/noice.nvim/lua/noice/view/nui.lua:285: in function <...a/Local/nvim-data/lazy/noice.nvim/lua/noice/view/nui.lua:279>
+	[C]: in function 'xpcall'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/call.lua:149: in function 'try'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/view/init.lua:140: in function 'display'
+	...l/nvim-data/lazy/noice.nvim/lua/noice/message/router.lua:215: in function <...l/nvim-data/lazy/noice.nvim/lua/noice/message/router.lua:155>
+	[C]: in function 'xpcall'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/call.lua:149: in function 'try'
+	...ta/Local/nvim-data/lazy/noice.nvim/lua/noice/ui/init.lua:99: in function <...ta/Local/nvim-data/lazy/noice.nvim/lua/noice/ui/init.lua:74>
+
+3/11/2024 11:44:44 AM
+...ata/Local/nvim-data/lazy/nui.nvim/lua/nui/utils/init.lua:29: Invalid window id: 1003
+
+stack traceback:
+	[C]: in function 'pcall'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/call.lua:144: in function <.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/call.lua:143>
+	[C]: in function 'nvim_win_get_width'
+	...ata/Local/nvim-data/lazy/nui.nvim/lua/nui/utils/init.lua:29: in function 'get_window_size'
+	...a/Local/nvim-data/lazy/nui.nvim/lua/nui/layout/utils.lua:92: in function 'get_container_info'
+	...a/Local/nvim-data/lazy/nui.nvim/lua/nui/layout/utils.lua:156: in function 'update_layout_config'
+	...ata/Local/nvim-data/lazy/nui.nvim/lua/nui/popup/init.lua:387: in function 'update_layout'
+	...
+	[C]: in function 'xpcall'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/call.lua:149: in function 'try'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/view/init.lua:140: in function 'display'
+	...l/nvim-data/lazy/noice.nvim/lua/noice/message/router.lua:215: in function <...l/nvim-data/lazy/noice.nvim/lua/noice/message/router.lua:155>
+	[C]: in function 'xpcall'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/call.lua:149: in function <.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/call.lua:134>
+	[C]: in function 'pcall'
+	.../Local/nvim-data/lazy/noice.nvim/lua/noice/util/init.lua:131: in function 'fn'
+	vim/_editor.lua:477: in function 'cb'
+	vim/_editor.lua:263: in function <vim/_editor.lua:262>
