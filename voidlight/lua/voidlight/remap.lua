@@ -17,6 +17,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
       { "<leader>ln", vim.lsp.buf.rename,            desc = "Rename" },
       { "<leader>lw", vim.lsp.buf.workspace_symbol,  desc = "Workspace symbol" },
       { "<leader>ld", vim.lsp.diagnostic.open_float, desc = "Open diagnostic float" },
+      { "<leader>ca", vim.lsp.buf.code_action,       desc = "Code Action" },
       { "[d",         vim.diagnostic.goto_next,      desc = "Go to next diagnostic" },
       { "]d",         vim.diagnostic.goto_prev,      desc = "Go to previous diagnostic" },
     }

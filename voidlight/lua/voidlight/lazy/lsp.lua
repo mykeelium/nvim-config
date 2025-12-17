@@ -26,10 +26,13 @@ return {
 
     require("fidget").setup({})
     require("mason").setup()
+    require 'lspconfig'.tsserver.setup {}
 
     require('mason-lspconfig').setup({
       ensure_installed = {
         "lua_ls",
+        "omnisharp",
+        "gopls",
       },
       handlers = {
         function(server_name)
@@ -56,7 +59,34 @@ return {
               }
             }
           })
-        end
+        end,
+
+        omnisharp = function()
+          require('lspconfig').omnisharp.setup({
+            capabilities = capabilities,
+            enable_roslyn_analysers = true,
+            enable_import_completion = true,
+            organize_imports_on_format = true,
+            enable_decompilation_support = true,
+            filetypes = { 'cs', 'vb', 'csproj', 'sln', 'slnx', 'props', 'csx', 'targets', 'tproj', 'slngen', 'fproj' },
+          })
+        end,
+
+        gopls = function()
+          require('lspconfig').gopls.setup({
+            capabilities = capabilities,
+            settings = {
+              gopls = {
+                analyses = {
+                  unusedparams = true,
+                  shadow = true,
+                },
+                staticcheck = true,
+                gofumpt = true, -- use gofumpt formatting style
+              },
+            },
+          })
+        end,
       }
     })
 
