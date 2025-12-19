@@ -32,6 +32,8 @@ return {
         "lua_ls",
         "omnisharp",
         "gopls",
+        "basedpyright",
+        "ruff",
       },
       handlers = {
         function(server_name)
@@ -85,6 +87,23 @@ return {
               },
             },
           })
+        end,
+
+        basedpyright = function()
+          vim.lsp.config('basedpyright', {
+            settings = {
+              basedpyright = {
+                analysis = {
+                  autoSearchPath = true,
+                  useLibraryCodeForTypes = true,
+                }
+              }
+            }
+          })
+        end,
+
+        ruff = function()
+          vim.lsp.config('ruff', {})
         end,
       }
     })
