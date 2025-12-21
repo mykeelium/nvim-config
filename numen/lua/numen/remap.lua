@@ -67,6 +67,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end,
         desc = "Diagnostics → quickfix",
       },
+      -- { "<leader>ca", vim.lsp.buf.code_action,  desc = "Code Action" },
+      -- { "[d",         vim.diagnostic.goto_next, desc = "Go to next diagnostic" },
+      -- { "]d",         vim.diagnostic.goto_prev, desc = "Go to previous diagnostic" },
     }
 
     which_key.add(mappings, opts)
