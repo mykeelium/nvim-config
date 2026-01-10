@@ -7,19 +7,69 @@ vim.api.nvim_create_autocmd('LspAttach', {
     local opts = { buffer = event.buf }
 
     local mappings = {
-      { "g",          group = "Go" },
-      { "gd",         vim.lsp.buf.definition,        desc = "Go to definition" },
-      { "gl",         vim.diagnostic.open_float,     desc = "Open diagnostic float" },
-      { "K",          vim.lsp.buf.hover,             desc = "Show hover information" },
-      { "<leader>l",  group = "LSP" },
-      { "<leader>la", vim.lsp.buf.code_action,       desc = "Code action" },
-      { "<leader>lr", vim.lsp.buf.references,        desc = "References" },
-      { "<leader>ln", vim.lsp.buf.rename,            desc = "Rename" },
-      { "<leader>lw", vim.lsp.buf.workspace_symbol,  desc = "Workspace symbol" },
-      { "<leader>ld", vim.lsp.diagnostic.open_float, desc = "Open diagnostic float" },
-      { "<leader>ca", vim.lsp.buf.code_action,       desc = "Code Action" },
-      { "[d",         vim.diagnostic.goto_next,      desc = "Go to next diagnostic" },
-      { "]d",         vim.diagnostic.goto_prev,      desc = "Go to previous diagnostic" },
+      { "g",  group = "Go" },
+      { "gd", vim.lsp.buf.definition, desc = "Go to definition" },
+      { "K",  vim.lsp.buf.hover,      desc = "Show hover information" },
+
+      -- Diagnostics (non-leader)
+      {
+        "gl",
+        function()
+          vim.diagnostic.open_float()
+        end,
+        desc = "Open diagnostic float",
+      },
+      {
+        "[d",
+        function()
+          vim.diagnostic.goto_prev()
+          vim.diagnostic.open_float()
+        end,
+        desc = "Previous diagnostic",
+      },
+      {
+        "]d",
+        function()
+          vim.diagnostic.goto_next()
+          vim.diagnostic.open_float()
+        end,
+        desc = "Next diagnostic",
+      },
+
+      -- LSP group (anchor prefix)
+      { "<leader>l",  group = "LSP / Diagnostics" },
+
+      { "<leader>la", vim.lsp.buf.code_action,      desc = "Code action" },
+      { "<leader>lr", vim.lsp.buf.references,       desc = "References" },
+      { "<leader>ln", vim.lsp.buf.rename,           desc = "Rename" },
+      { "<leader>lw", vim.lsp.buf.workspace_symbol, desc = "Workspace symbol" },
+
+      {
+        "<leader>ld",
+        function()
+          vim.diagnostic.open_float()
+        end,
+        desc = "Line diagnostics",
+      },
+
+      {
+        "<leader>ll",
+        function()
+          vim.diagnostic.setloclist()
+        end,
+        desc = "Diagnostics → loclist",
+      },
+
+      {
+        "<leader>lq",
+        function()
+          vim.diagnostic.setqflist()
+        end,
+        desc = "Diagnostics → quickfix",
+      },
+      -- { "<leader>ca", vim.lsp.buf.code_action,  desc = "Code Action" },
+      -- { "[d",         vim.diagnostic.goto_next, desc = "Go to next diagnostic" },
+      -- { "]d",         vim.diagnostic.goto_prev, desc = "Go to previous diagnostic" },
     }
 
     which_key.add(mappings, opts)
@@ -47,7 +97,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 local non_lsp_mappings = {
-  { "<leader>e", vim.cmd.Ex,                                             desc = "Open file explorer" },
+  { "<leader>e", "<cmd>Oil<CR>",                                         desc = "Open file explorer" },
   { "<leader>p", "\"_dP",                                                desc = "Paste without overwrite" },
   { "<leader>/", "<Plug>(comment_toggle_linewise_current)",              desc = "Toggle comment" },
   { "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = "Search and replace word under cursor" },

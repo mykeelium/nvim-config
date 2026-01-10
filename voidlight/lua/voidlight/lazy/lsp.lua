@@ -26,22 +26,23 @@ return {
 
     require("fidget").setup({})
     require("mason").setup()
-    require 'lspconfig'.tsserver.setup {}
 
     require('mason-lspconfig').setup({
       ensure_installed = {
         "lua_ls",
         "omnisharp",
         "gopls",
+        "basedpyright",
+        "ruff",
       },
       handlers = {
         function(server_name)
-          require('lspconfig')[server_name].setup({
-            capabilities = capabilities,
+          vim.lsp.config(server_name, {
+            capabilities = capabilities
           })
         end,
         lua_ls = function()
-          require('lspconfig').lua_ls.setup({
+          vim.lsp.config('lua_ls', {
             capabilities = capabilities,
             settings = {
               Lua = {
@@ -62,7 +63,7 @@ return {
         end,
 
         omnisharp = function()
-          require('lspconfig').omnisharp.setup({
+          vim.lsp.config('omnisharp', {
             capabilities = capabilities,
             enable_roslyn_analysers = true,
             enable_import_completion = true,
@@ -73,7 +74,7 @@ return {
         end,
 
         gopls = function()
-          require('lspconfig').gopls.setup({
+          vim.lsp.config('gopls', {
             capabilities = capabilities,
             settings = {
               gopls = {
@@ -86,6 +87,23 @@ return {
               },
             },
           })
+        end,
+
+        basedpyright = function()
+          vim.lsp.config('basedpyright', {
+            settings = {
+              basedpyright = {
+                analysis = {
+                  autoSearchPath = true,
+                  useLibraryCodeForTypes = true,
+                }
+              }
+            }
+          })
+        end,
+
+        ruff = function()
+          vim.lsp.config('ruff', {})
         end,
       }
     })
