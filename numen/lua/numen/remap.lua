@@ -1,6 +1,25 @@
 local which_key = require "which-key"
 local builtin = require('telescope.builtin')
 
+local function git_root()
+  local root = vim.fn.systemlist("git rev-parse --show-toplevel")[1]
+  return root and root ~= "" and root or nil
+end
+
+local function project_root()
+  local git_root = vim.fn.systemlist("git rev-parse --show-toplevel")[1]
+  if git_root and git_root ~= "" then
+    return git_root
+  end
+  return vim.loop.cwd()
+end
+
+-- Guard Snacks once
+local ok, Snacks = pcall(require, "snacks")
+if not ok then
+  return
+end
+
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('user_lsp_attach', { clear = true }),
   callback = function(event)
@@ -126,10 +145,10 @@ which_key.add(non_lsp_mappings)
 -- Telescope Commands
 
 local telescope_mappings = {
-  { "<leader>f",  group = "Find" },
-  { "<leader>ff", builtin.find_files, desc = "Find files" },
-  { "<leader>fg", builtin.git_files,  desc = "Find git files" },
-  { "<leader>fl", builtin.live_grep,  desc = "Live grep" },
+  { "<leader>f",  group = "Find + Floating" },
+  { "<leader>ff", builtin.find_files,       desc = "Find files" },
+  { "<leader>fg", builtin.git_files,        desc = "Find git files" },
+  { "<leader>fl", builtin.live_grep,        desc = "Live grep" },
 }
 
 which_key.add(telescope_mappings)
@@ -171,3 +190,116 @@ which_key.add(visual_mappings, { mode = "v" })
 
 -- insert commands
 vim.keymap.set('i', '<Right>', '<Right>', { noremap = true }) -- Make the right arrow behave normally in insert mode
+
+local git_mappings = {
+  { "<leader>g",  group = "Git" },
+
+  { "<leader>gg", function() Snacks.lazygit({ cwd = git_root() }) end, desc = "LazyGit (Root Dir)" },
+  {
+    "<leader>gG",
+    function()
+      Snacks.lazygit()
+    end,
+    desc = "LazyGit (cwd)",
+    cond = function()
+      return vim.fn.executable("lazygit") == 1
+    end,
+  },
+
+  -- Git logs / history
+  {
+    "<leader>gL",
+    function()
+      Snacks.picker.git_log()
+    end,
+    desc = "Git Log (cwd)",
+  },
+
+  {
+    "<leader>gl",
+    function()
+      Snacks.picker.git_log({ cwd = git_root() })
+    end,
+    desc = "Git Log (Root Dir)",
+  },
+
+  {
+    "<leader>gb",
+    function()
+      Snacks.picker.git_log_line()
+    end,
+    desc = "Git Blame Line",
+  },
+
+  {
+    "<leader>gf",
+    function()
+      Snacks.picker.git_log_file()
+    end,
+    desc = "Git Current File History",
+  },
+
+  -- Git browse
+  {
+    "<leader>gB",
+    function()
+      Snacks.gitbrowse()
+    end,
+    desc = "Git Browse (open)",
+    mode = { "n", "x" },
+  },
+
+  {
+    "<leader>gY",
+    function()
+      Snacks.gitbrowse({
+        open = function(url)
+          vim.fn.setreg("+", url)
+        end,
+        notify = false,
+      })
+    end,
+    desc = "Git Browse (copy)",
+    mode = { "n", "x" },
+  },
+}
+
+which_key.add(git_mappings)
+
+local terminal_mappings = {
+  {
+    "<leader>fT",
+    function()
+      Snacks.terminal()
+    end,
+    desc = "Terminal (cwd)",
+  },
+
+  {
+    "<leader>ft",
+    function()
+      Snacks.terminal(nil, { cwd = project_root() })
+    end,
+    desc = "Terminal (Root Dir)",
+  },
+
+  {
+    "<C-/>",
+    function()
+      Snacks.terminal(nil, { cwd = project_root() })
+    end,
+    desc = "Terminal (Root Dir)",
+    mode = { "n", "t" },
+  },
+
+  {
+    "<C-_>",
+    function()
+      Snacks.terminal(nil, { cwd = project_root() })
+    end,
+    desc = "which_key_ignore",
+    mode = { "n", "t" },
+  },
+}
+
+which_key.add(terminal_mappings)
