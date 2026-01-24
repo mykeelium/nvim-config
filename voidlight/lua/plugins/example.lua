@@ -143,27 +143,32 @@ return {
 
   -- add more treesitter parsers
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "bash",
-        "html",
-        "gleam",
-        "javascript",
-        "json",
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "tsx",
-        "typescript",
-        "vim",
-        "yaml",
-      },
-    },
-  },
+    'nvim-treesitter/nvim-treesitter',
+    lazy = false,
+    build = ':TSUpdate'
+  }
+  -- {
+  --   "nvim-treesitter/nvim-treesitter",
+  --   opts = {
+  --     ensure_installed = {
+  --       "bash",
+  --       "html",
+  --       "gleam",
+  --       "javascript",
+  --       "json",
+  --       "lua",
+  --       "markdown",
+  --       "markdown_inline",
+  --       "python",
+  --       "query",
+  --       "regex",
+  --       "tsx",
+  --       "typescript",
+  --       "vim",
+  --       "yaml",
+  --     },
+  --   },
+  -- },
 
   -- since `vim.tbl_deep_extend`, can only merge tables and not lists, the code above
   -- would overwrite `ensure_installed` with the new value.
@@ -225,16 +230,10 @@ return {
 
   -- add any tools you want to have installed below
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-      },
-    },
-  },
+      "mason-org/mason.nvim",
+      lazy = false,
+      opts = {}
+  }
 
   -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
