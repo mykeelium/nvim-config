@@ -14,5 +14,5 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = "machine.lazy",
   change_detection = { notify = false },
-  root = "/usr/share/nvim/site/pack/lazy",
+  root = "/usr/share/nvim/plugins",
 })
