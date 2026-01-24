@@ -1,1 +1,1 @@
-require("machine.lua.machine.init")
+require("machine")

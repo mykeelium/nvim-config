@@ -24,8 +24,8 @@ return {
       cmp_lsp.default_capabilities()
     )
 
-    require("mason").setup()
     require("fidget").setup({})
+    require("mason").setup()
 
     require('mason-lspconfig').setup({
       ensure_installed = {
