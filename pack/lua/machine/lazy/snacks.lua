@@ -1,4 +1,9 @@
 return {
   "folke/snacks.nvim",
-  opts = {},
+  opts = {
+    lazygit = { enabled = true },
+    terminal = { enabled = true },
+    picker = { enabled = true },
+    gitbrowse = { enabled = true },
+  },
 }
