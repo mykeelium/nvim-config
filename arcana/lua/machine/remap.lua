@@ -1,32 +1,97 @@
 local which_key = require "which-key"
 local builtin = require('telescope.builtin')
 
+local function git_root()
+  local root = vim.fn.systemlist("git rev-parse --show-toplevel")[1]
+  return root and root ~= "" and root or nil
+end
+
+local function project_root()
+  local git_root = vim.fn.systemlist("git rev-parse --show-toplevel")[1]
+  if git_root and git_root ~= "" then
+    return git_root
+  end
+  return vim.loop.cwd()
+end
+
+-- Guard Snacks once
+local ok, Snacks = pcall(require, "snacks")
+if not ok then
+  return
+end
+
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('user_lsp_attach', { clear = true }),
   callback = function(event)
     local opts = { buffer = event.buf }
 
     local mappings = {
-      g = {
-        d = { vim.lsp.buf.definition, "Go to definition" },
-        l = { vim.diagnostic.open_float, "Open diagnostic float" },
+      { "g",  group = "Go" },
+      { "gd", vim.lsp.buf.definition, desc = "Go to definition" },
+      { "K",  vim.lsp.buf.hover,      desc = "Show hover information" },
+
+      -- Diagnostics (non-leader)
+      {
+        "gl",
+        function()
+          vim.diagnostic.open_float()
+        end,
+        desc = "Open diagnostic float",
       },
-      K = { vim.lsp.buf.hover, "Show hover information" },
-      ["<leader>"] = {
-        l = {
-          name = "LSP",
-          a = { vim.lsp.buf.code_action, "Code action" },
-          r = { vim.lsp.buf.references, "References" },
-          n = { vim.lsp.buf.rename, "Rename" },
-          w = { vim.lsp.buf.workspace_symbol, "Workspace symbol" },
-          d = { vim.diagnostic.open_float, "Open diagnostic float" },
-        },
+      {
+        "[d",
+        function()
+          vim.diagnostic.goto_prev()
+          vim.diagnostic.open_float()
+        end,
+        desc = "Previous diagnostic",
       },
-      ["[d"] = { vim.diagnostic.goto_next, "Go to next diagnostic" },
-      ["]d"] = { vim.diagnostic.goto_prev, "Go to previous diagnostic" },
+      {
+        "]d",
+        function()
+          vim.diagnostic.goto_next()
+          vim.diagnostic.open_float()
+        end,
+        desc = "Next diagnostic",
+      },
+
+      -- LSP group (anchor prefix)
+      { "<leader>l",  group = "LSP / Diagnostics" },
+
+      { "<leader>la", vim.lsp.buf.code_action,      desc = "Code action" },
+      { "<leader>lr", vim.lsp.buf.references,       desc = "References" },
+      { "<leader>ln", vim.lsp.buf.rename,           desc = "Rename" },
+      { "<leader>lw", vim.lsp.buf.workspace_symbol, desc = "Workspace symbol" },
+
+      {
+        "<leader>ld",
+        function()
+          vim.diagnostic.open_float()
+        end,
+        desc = "Line diagnostics",
+      },
+
+      {
+        "<leader>ll",
+        function()
+          vim.diagnostic.setloclist()
+        end,
+        desc = "Diagnostics → loclist",
+      },
+
+      {
+        "<leader>lq",
+        function()
+          vim.diagnostic.setqflist()
+        end,
+        desc = "Diagnostics → quickfix",
+      },
+      -- { "<leader>ca", vim.lsp.buf.code_action,  desc = "Code Action" },
+      -- { "[d",         vim.diagnostic.goto_next, desc = "Go to next diagnostic" },
+      -- { "]d",         vim.diagnostic.goto_prev, desc = "Go to previous diagnostic" },
     }
 
-    which_key.register(mappings, opts)
+    which_key.add(mappings, opts)
 
     -- vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
     -- vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
@@ -51,22 +116,20 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 local non_lsp_mappings = {
-  ["<leader>"] = {
-    e = { vim.cmd.Ex, "Open file explorer" },
-    p = { "\"_dP", "Paste without overwrite" },
-    ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Toggle comment" },
-    s = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace word under cursor" },
-    t = { ":Today<CR>", "Open today's note" },
-  },
-  J = { "mzJ`z", "Join lines and keep cursor position" },
-  ["<C-d>"] = { "<C-d>zz", "Half page down and center" },
-  ["<C-u>"] = { "<C-u>zz", "Half page up and center" },
-  n = { "nzzzv", "Next search result and center" },
-  N = { "Nzzzv", "Previous search result and center" },
-  Q = { "<nop>", "Disable Ex mode" },
+  { "<leader>e", "<cmd>Oil<CR>",                                         desc = "Open file explorer" },
+  { "<leader>p", "\"_dP",                                                desc = "Paste without overwrite" },
+  { "<leader>/", "<Plug>(comment_toggle_linewise_current)",              desc = "Toggle comment" },
+  { "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = "Search and replace word under cursor" },
+  { "<leader>t", ":Today<CR>",                                           desc = "Open today's note" },
+  { "J",         "mzJ`z",                                                desc = "Join lines and keep cursor position" },
+  { "<C-d>",     "<C-d>zz",                                              desc = "Half page down and center" },
+  { "<C-u>",     "<C-u>zz",                                              desc = "Half page up and center" },
+  { "n",         "nzzzv",                                                desc = "Next search result and center" },
+  { "N",         "Nzzzv",                                                desc = "Previous search result and center" },
+  { "Q",         "<nop>",                                                desc = "Disable Ex mode" },
 }
 
-which_key.register(non_lsp_mappings)
+which_key.add(non_lsp_mappings)
 
 -- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 -- vim.keymap.set("n", "J", "mzJ`z")       -- Keep cursor in same position on line join
@@ -82,19 +145,17 @@ which_key.register(non_lsp_mappings)
 -- Telescope Commands
 
 local telescope_mappings = {
-  f = {
-    name = "Find",
-    f = { builtin.find_files, "Find files" },
-    g = { builtin.git_files, "Find git files" },
-    l = { builtin.live_grep, "Live grep" },
-  },
+  { "<leader>f",  group = "Find + Floating" },
+  { "<leader>ff", builtin.find_files,       desc = "Find files" },
+  { "<leader>fg", builtin.git_files,        desc = "Find git files" },
+  { "<leader>fl", builtin.live_grep,        desc = "Live grep" },
 }
 
-which_key.register(telescope_mappings, { prefix = "<leader>" })
+which_key.add(telescope_mappings)
 
 -- Register the semicolon mapping separately as it doesn't use the leader prefix
-which_key.register({
-  [";"] = { builtin.buffers, "Find buffers" },
+which_key.add({
+  { ";", builtin.buffers, desc = "Find buffers" },
 })
 
 -- vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
@@ -111,14 +172,12 @@ which_key.register({
 -- vim.keymap.set("v", "<leader>/", "<Plug>(comment_toggle_linewise_visual)")
 
 local visual_mappings = {
-  J = { ":m '>+1<CR>gv=gv", "Move selection down" },
-  K = { ":m '<-2<CR>gv=gv", "Move selection up" },
-  ["<leader>"] = {
-    ["/"] = { "<Plug>(comment_toggle_linewise_visual)", "Toggle comment" },
-  },
+  { "J",         ":m '>+1<CR>gv=gv",                       desc = "Move selection down" },
+  { "K",         ":m '<-2<CR>gv=gv",                       desc = "Move selection up" },
+  { "<leader>/", "<Plug>(comment_toggle_linewise_visual)", desc = "Toggle comment" },
 }
 
-which_key.register(visual_mappings, { mode = "v" })
+which_key.add(visual_mappings, { mode = "v" })
 
 --- Don't overwrite pastes in visual mode
 -- vim.keymap.set("x", "<leader>p", "\"_dP")
@@ -131,3 +190,116 @@ which_key.register(visual_mappings, { mode = "v" })
 
 -- insert commands
 vim.keymap.set('i', '<Right>', '<Right>', { noremap = true }) -- Make the right arrow behave normally in insert mode
+
+local git_mappings = {
+  { "<leader>g",  group = "Git" },
+
+  { "<leader>gg", function() Snacks.lazygit({ cwd = git_root() }) end, desc = "LazyGit (Root Dir)" },
+  {
+    "<leader>gG",
+    function()
+      Snacks.lazygit()
+    end,
+    desc = "LazyGit (cwd)",
+    cond = function()
+      return vim.fn.executable("lazygit") == 1
+    end,
+  },
+
+  -- Git logs / history
+  {
+    "<leader>gL",
+    function()
+      Snacks.picker.git_log()
+    end,
+    desc = "Git Log (cwd)",
+  },
+
+  {
+    "<leader>gl",
+    function()
+      Snacks.picker.git_log({ cwd = git_root() })
+    end,
+    desc = "Git Log (Root Dir)",
+  },
+
+  {
+    "<leader>gb",
+    function()
+      Snacks.picker.git_log_line()
+    end,
+    desc = "Git Blame Line",
+  },
+
+  {
+    "<leader>gf",
+    function()
+      Snacks.picker.git_log_file()
+    end,
+    desc = "Git Current File History",
+  },
+
+  -- Git browse
+  {
+    "<leader>gB",
+    function()
+      Snacks.gitbrowse()
+    end,
+    desc = "Git Browse (open)",
+    mode = { "n", "x" },
+  },
+
+  {
+    "<leader>gY",
+    function()
+      Snacks.gitbrowse({
+        open = function(url)
+          vim.fn.setreg("+", url)
+        end,
+        notify = false,
+      })
+    end,
+    desc = "Git Browse (copy)",
+    mode = { "n", "x" },
+  },
+}
+
+which_key.add(git_mappings)
+
+local terminal_mappings = {
+  {
+    "<leader>fT",
+    function()
+      Snacks.terminal()
+    end,
+    desc = "Terminal (cwd)",
+  },
+
+  {
+    "<leader>ft",
+    function()
+      Snacks.terminal(nil, { cwd = project_root() })
+    end,
+    desc = "Terminal (Root Dir)",
+  },
+
+  {
+    "<C-/>",
+    function()
+      Snacks.terminal(nil, { cwd = project_root() })
+    end,
+    desc = "Terminal (Root Dir)",
+    mode = { "n", "t" },
+  },
+
+  {
+    "<C-_>",
+    function()
+      Snacks.terminal(nil, { cwd = project_root() })
+    end,
+    desc = "which_key_ignore",
+    mode = { "n", "t" },
+  },
+}
+
+which_key.add(terminal_mappings)

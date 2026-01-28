@@ -29,17 +29,20 @@ return {
 
     require('mason-lspconfig').setup({
       ensure_installed = {
-        "tsserver",
         "lua_ls",
+        "omnisharp",
+        "gopls",
+        "basedpyright",
+        "ruff",
       },
       handlers = {
         function(server_name)
-          require('lspconfig')[server_name].setup({
-            capabilities = capabilities,
+          vim.lsp.config(server_name, {
+            capabilities = capabilities
           })
         end,
         lua_ls = function()
-          require('lspconfig').lua_ls.setup({
+          vim.lsp.config('lua_ls', {
             capabilities = capabilities,
             settings = {
               Lua = {
@@ -57,7 +60,51 @@ return {
               }
             }
           })
-        end
+        end,
+
+        omnisharp = function()
+          vim.lsp.config('omnisharp', {
+            capabilities = capabilities,
+            enable_roslyn_analysers = true,
+            enable_import_completion = true,
+            organize_imports_on_format = true,
+            enable_decompilation_support = true,
+            filetypes = { 'cs', 'vb', 'csproj', 'sln', 'slnx', 'props', 'csx', 'targets', 'tproj', 'slngen', 'fproj' },
+          })
+        end,
+
+        gopls = function()
+          vim.lsp.config('gopls', {
+            capabilities = capabilities,
+            settings = {
+              gopls = {
+                analyses = {
+                  unusedparams = true,
+                  shadow = true,
+                },
+                staticcheck = true,
+                gofumpt = true, -- use gofumpt formatting style
+              },
+            },
+          })
+        end,
+
+        basedpyright = function()
+          vim.lsp.config('basedpyright', {
+            settings = {
+              basedpyright = {
+                analysis = {
+                  autoSearchPath = true,
+                  useLibraryCodeForTypes = true,
+                }
+              }
+            }
+          })
+        end,
+
+        ruff = function()
+          vim.lsp.config('ruff', {})
+        end,
       }
     })
 
