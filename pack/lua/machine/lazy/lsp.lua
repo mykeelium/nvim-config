@@ -25,7 +25,9 @@ return {
     )
 
     require("fidget").setup({})
-    require("mason").setup()
+    require("mason").setup({
+      install_root_dir = "/var/lib/nvim/mason",
+    })
 
     require('mason-lspconfig').setup({
       ensure_installed = {
