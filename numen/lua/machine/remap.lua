@@ -62,6 +62,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
       { "<leader>lr", vim.lsp.buf.references,       desc = "References" },
       { "<leader>ln", vim.lsp.buf.rename,           desc = "Rename" },
       { "<leader>lw", vim.lsp.buf.workspace_symbol, desc = "Workspace symbol" },
+      { "<leader>li", vim.lsp.buf.implementation,   desc = "Implementations" },
 
       {
         "<leader>ld",
